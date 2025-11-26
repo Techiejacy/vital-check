@@ -250,7 +250,7 @@ def get_diagnosis(user_input):
 # Sidebar
 with st.sidebar:
     st.header("⚙️ Controls")
-    if st.button("🔄 Reset MediSense Memory"):
+    if st.button("🔄 Reset VitalCheck Memory"):
         st.cache_resource.clear()
         st.rerun()
     st.divider()
@@ -258,7 +258,7 @@ with st.sidebar:
     st.write("Tap to speak:")
     voice_text = speech_to_text(language='en', use_container_width=True, just_once=True, key='STT')
 
-st.title("🩺 MediSense")
+st.title("🩺 VitalCheck")
 st.caption("Precision Health Assistant")
 
 if "messages" not in st.session_state:
