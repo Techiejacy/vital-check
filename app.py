@@ -16,10 +16,10 @@ st.set_page_config(page_title="VitalCheck", page_icon="🩺", layout="wide")
 # 1. CONFIGURATION & LOADING
 # ==========================================
 FILE_PATHS = {
-    "dataset": "data/raw/symptomdatas/dataset.csv",
-    "description": "data/raw/symptomdatas/symptom_Description.csv",
-    "precaution": "data/raw/symptomdatas/symptom_precaution.csv",
-    "who_mortality": "data/processed/who_mortality_sample.csv"
+    "dataset": "dataset.csv",
+    "description": "symptom_Description.csv",
+    "precaution": "symptom_precaution.csv",
+    "who_mortality": "who_mortality_sample.csv"
 }
 
 @st.cache_resource
